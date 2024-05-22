@@ -1,0 +1,74 @@
+{
+  "alias": "clone-total.js",
+  "author": "Stephen Isienyi <stephen.isienyi@webkrafting.com>",
+  "bugs": {
+    "url": "https://github.com/webKrafters/clone-total.js/issues"
+  },
+  "contributors": [
+    "steveswork <stephen.isienyi@gmail.com> (https://github.com/steveswork)"
+  ],
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
+  "description": "Long Count - intervals and timeout capable of handling superbly long wait times surviving device sleep and wake cycles.",
+  "devDependencies": {
+    "@babel/cli": "^7.17.0",
+    "@babel/core": "^7.20.5",
+    "@babel/node": "^7.12.10",
+    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.18.6",
+    "@babel/plugin-transform-runtime": "^7.17.0",
+    "@babel/preset-env": "^7.20.2",
+    "@types/jest": "^29.5.12",
+    "@types/lodash": "^4.17.4",
+    "@types/node": "^20.11.28",
+    "babel-loader": "^8.2.5",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.2"
+  },
+  "files": [
+    "dist",
+    "logo.svg"
+  ],
+  "homepage": "https://github.com/webKrafters/clone-total/readme",
+  "keywords": [
+    "clone",
+    "clone deep",
+    "clone-deep",
+    "clone_deep",
+    "cloneDeep",
+    "clonedeep",
+    "clone node",
+    "clone-node",
+    "clone_node",
+    "cloneNode",
+    "clonenode",
+    "cloneable",
+    "clonable",
+    "deep copy",
+    "deep-copy",
+    "deep_copy",
+    "deepCopy",
+    "deepcopy"
+  ],
+  "license": "MIT",
+  "main": "dist/index.js",
+  "name": "@webkrafters/clone-total",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webKrafters/clone-total.js.git"
+  },
+  "scripts": {
+    "build": "rm -rf dist && tsc && babel dist -d dist",
+    "test": "jest --coverage --updateSnapshot",
+    "test:clean": "jest --clearCache",
+    "test:core": "jest --updateSnapshot",
+    "test:watch": "jest --updateSnapshot --watchAll"
+  },
+  "types": "dist/index.d.ts",
+  "version": "0.0.1"
+}
