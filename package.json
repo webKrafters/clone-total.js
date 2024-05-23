@@ -10,7 +10,7 @@
   "dependencies": {
     "lodash": "^4.17.21"
   },
-  "description": "Long Count - Regular clonedeep including all instances implementing the `clone` and the `cloneNode` methods.",
+  "description": "Clone Total - Regular clonedeep including all instances implementing the `clone` and the `cloneNode` methods.",
   "devDependencies": {
     "@babel/cli": "^7.17.0",
     "@babel/core": "^7.20.5",
@@ -70,5 +70,5 @@
     "test:watch": "jest --updateSnapshot --watchAll"
   },
   "types": "dist/index.d.ts",
-  "version": "0.0.3"
+  "version": "0.0.4"
 }
