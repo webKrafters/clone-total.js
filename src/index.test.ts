@@ -42,6 +42,21 @@ describe( 'clonedeep(...)', () => {
 		expect( clone ).not.toBe( value );
 		expect( clone ).toStrictEqual( value );
 	} );
+	test( 'accepts a customizer', () => {
+		expect( clonedeep({
+			a: 'asci',
+			b: true,
+			n: 33,
+			s: 'string'
+		}, v => {
+			if( typeof v === 'string' ) { return true }
+		}) ).toEqual({
+			a: true,
+			b: true,
+			n: 33,
+			s: true
+		});
+	} );
 	describe( 'cloning unrecognizable instance', () => {
 		const runWith = ( value, cloneWatcher ) => {
 			const clone = clonedeep( value );
