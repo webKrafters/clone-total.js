@@ -1,10 +1,10 @@
 import type { CloneDeepWithCustomizer } from 'lodash';
 
-import { cloneDeepWith } from 'lodash';
-
 import checkEligibility from './clonedeep-eligibility-check';
 
 export type Customizer<T = unknown> = CloneDeepWithCustomizer<T>;
+
+const cloneDeepWith = require( 'lodash.clonedeepwith' );
 
 const noop = () => {};
 

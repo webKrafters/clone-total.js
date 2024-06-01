@@ -23,7 +23,7 @@ clone( object ); // returns cloned object
 
 ```jsx
 
-function customizer(
+function customizer<T>(
     value : unknown,
     key? : number | string,
     object? : T,
