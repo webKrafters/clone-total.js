@@ -54,7 +54,8 @@
   "main": "dist/index.js",
   "name": "@webkrafters/clone-total",
   "peerDependencies": {
-    "@types/lodash": ">= 4.x"
+    "@types/lodash": ">= 4.x",
+    "lodash.clonedeepwith": ">= 4.x"
   },
   "publishConfig": {
     "access": "public"
